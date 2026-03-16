@@ -1,39 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-12T09:51:31 IST" name="Default suite" finished-at="2026-03-12T09:51:47 IST" duration-ms="16258">
+  <suite started-at="2026-03-16T09:25:07 IST" name="Suite" finished-at="2026-03-16T09:25:23 IST" duration-ms="16316">
     <groups>
     </groups>
-    <test started-at="2026-03-12T09:51:31 IST" name="Default test" finished-at="2026-03-12T09:51:47 IST" duration-ms="16258">
-      <class name="ShopperWithPojo.ShopperCart">
-        <test-method is-config="true" signature="login()[pri:0, instance:ShopperWithPojo.ShopperCart@6ed3ccb2]" started-at="2026-03-12T09:51:43 IST" name="login" finished-at="2026-03-12T09:51:44 IST" duration-ms="921" status="PASS">
+    <test started-at="2026-03-16T09:25:07 IST" name="Test" finished-at="2026-03-16T09:25:23 IST" duration-ms="16316">
+      <class name="ShopperWithPojo.CreateProduct">
+        <test-method signature="addVendor()[pri:0, instance:ShopperWithPojo.CreateProduct@3d285d7e]" started-at="2026-03-16T09:25:17 IST" name="addVendor" finished-at="2026-03-16T09:25:17 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addVendor -->
+        <test-method signature="createProduct()[pri:0, instance:ShopperWithPojo.CreateProduct@3d285d7e]" started-at="2026-03-16T09:25:17 IST" name="createProduct" finished-at="2026-03-16T09:25:17 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createProduct -->
+      </class> <!-- ShopperWithPojo.CreateProduct -->
+      <class name="ShopperWithPojo.ShopperProfile">
+        <test-method is-config="true" signature="login()[pri:0, instance:ShopperWithPojo.ShopperProfile@79079097]" started-at="2026-03-16T09:25:07 IST" name="login" finished-at="2026-03-16T09:25:14 IST" duration-ms="6720" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="addProductToCart()[pri:0, instance:ShopperWithPojo.ShopperCart@6ed3ccb2]" started-at="2026-03-12T09:51:44 IST" name="addProductToCart" finished-at="2026-03-12T09:51:45 IST" depends-on-methods="ShopperWithPojo.ProductViewActions.fetchAllProducts" duration-ms="861" status="PASS">
+        <test-method signature="fetchProfile()[pri:0, instance:ShopperWithPojo.ShopperProfile@79079097]" started-at="2026-03-16T09:25:14 IST" name="fetchProfile" finished-at="2026-03-16T09:25:14 IST" duration-ms="744" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fetchProfile -->
+        <test-method signature="updateProfile()[pri:0, instance:ShopperWithPojo.ShopperProfile@79079097]" started-at="2026-03-16T09:25:15 IST" name="updateProfile" finished-at="2026-03-16T09:25:15 IST" depends-on-methods="ShopperWithPojo.ShopperProfile.fetchProfile" duration-ms="914" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateProfile -->
+      </class> <!-- ShopperWithPojo.ShopperProfile -->
+      <class name="Shopper.ShopperLoginTest">
+        <test-method signature="loginTest()[pri:0, instance:Shopper.ShopperLoginTest@302552ec]" started-at="2026-03-16T09:25:15 IST" name="loginTest" finished-at="2026-03-16T09:25:16 IST" duration-ms="853" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="fetchData()[pri:0, instance:Shopper.ShopperLoginTest@302552ec]" started-at="2026-03-16T09:25:16 IST" name="fetchData" finished-at="2026-03-16T09:25:17 IST" depends-on-methods="Shopper.ShopperLoginTest.loginTest" duration-ms="663" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fetchData -->
+      </class> <!-- Shopper.ShopperLoginTest -->
+      <class name="ShopperWithPojo.ShopperCart">
+        <test-method is-config="true" signature="login()[pri:0, instance:ShopperWithPojo.ShopperCart@40005471]" started-at="2026-03-16T09:25:20 IST" name="login" finished-at="2026-03-16T09:25:21 IST" duration-ms="891" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="addProductToCart()[pri:0, instance:ShopperWithPojo.ShopperCart@40005471]" started-at="2026-03-16T09:25:21 IST" name="addProductToCart" finished-at="2026-03-16T09:25:22 IST" depends-on-methods="ShopperWithPojo.ProductViewActions.fetchAllProducts" duration-ms="763" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addProductToCart -->
-        <test-method signature="updateCart()[pri:0, instance:ShopperWithPojo.ShopperCart@6ed3ccb2]" started-at="2026-03-12T09:51:45 IST" name="updateCart" finished-at="2026-03-12T09:51:46 IST" depends-on-methods="ShopperWithPojo.ShopperCart.addProductToCart" duration-ms="1002" status="PASS">
+        <test-method signature="updateCart()[pri:0, instance:ShopperWithPojo.ShopperCart@40005471]" started-at="2026-03-16T09:25:22 IST" name="updateCart" finished-at="2026-03-16T09:25:23 IST" depends-on-methods="ShopperWithPojo.ShopperCart.addProductToCart" duration-ms="780" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateCart -->
-        <test-method signature="DeleteFromCart()[pri:0, instance:ShopperWithPojo.ShopperCart@6ed3ccb2]" started-at="2026-03-12T09:51:46 IST" name="DeleteFromCart" finished-at="2026-03-12T09:51:47 IST" depends-on-methods="ShopperWithPojo.ShopperCart.updateCart" duration-ms="921" status="PASS">
+        <test-method signature="DeleteFromCart()[pri:0, instance:ShopperWithPojo.ShopperCart@40005471]" started-at="2026-03-16T09:25:23 IST" name="DeleteFromCart" finished-at="2026-03-16T09:25:23 IST" depends-on-methods="ShopperWithPojo.ShopperCart.updateCart" duration-ms="694" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DeleteFromCart -->
       </class> <!-- ShopperWithPojo.ShopperCart -->
       <class name="ShopperWithPojo.ProductViewActions">
-        <test-method is-config="true" signature="login()[pri:0, instance:ShopperWithPojo.ProductViewActions@7c6908d7]" started-at="2026-03-12T09:51:31 IST" name="login" finished-at="2026-03-12T09:51:36 IST" duration-ms="5705" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:ShopperWithPojo.ProductViewActions@2cd76f31]" started-at="2026-03-16T09:25:17 IST" name="login" finished-at="2026-03-16T09:25:18 IST" duration-ms="831" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="fetchAllProducts()[pri:0, instance:ShopperWithPojo.ProductViewActions@7c6908d7]" started-at="2026-03-12T09:51:37 IST" name="fetchAllProducts" finished-at="2026-03-12T09:51:43 IST" duration-ms="6749" status="PASS">
+        <test-method signature="fetchAllProducts()[pri:0, instance:ShopperWithPojo.ProductViewActions@2cd76f31]" started-at="2026-03-16T09:25:18 IST" name="fetchAllProducts" finished-at="2026-03-16T09:25:20 IST" duration-ms="2356" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fetchAllProducts -->
       </class> <!-- ShopperWithPojo.ProductViewActions -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
